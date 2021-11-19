@@ -1,0 +1,23 @@
+@keyframes downloadBtn {
+    0% {
+        box-shadow: 0px 0px 10px 0px #86c232, 0px 0px 19px 4px #6b6e70, 0px 0px 10px 0px #A7CC72, 0px 0px 19px 4px #2E4211;    
+    }
+    50% {
+        box-shadow: 5px 5px 15px 5px #86c232, -9px 5px 15px 5px #6b6e70, -7px -5px 15px 5px #FF616B, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #8E5CFF, -10px 10px 15px 7px #8CFF85, -10px -7px 27px 1px #E488FF, 0px 0px 16px 10px rgba(97,137,47,0);
+    }
+    100% {
+        box-shadow: 0px 0px 10px 0px #86c232, 0px 0px 19px 4px #6b6e70, 0px 0px 10px 0px #A7CC72, 0px 0px 19px 4px #2E4211;    
+    }
+}
+
+@keyframes ping {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+  }

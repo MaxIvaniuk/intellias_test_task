@@ -13,19 +13,27 @@
         <div class="wrapper">
             <div class="header_container">
                 <div class="header_logo">
-                    <a href="#" class="header_logo__link">Ivaniuk</a>
+                    <a href="#" class="header_logo__link">
+                        <i class="fas fa-code"></i>
+                    </a>
                 </div>
                 <div class="header_nav">
-                    <nav class="main_nav">
+                    <label for="check" class="mobile_toggle">
+                        <input type="checkbox" id="check" class="mobile_toggle__input">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="main_nav mobile_nav">
                         <ul class="nav_list">
                             <li class="nav_list__item">
-                                <a href="#" class="nav_list__link">About me</a>
+                                <a href="#info" class="nav_list__link">About me</a>
                             </li>
                             <li class="nav_list__item">
-                                <a href="#" class="nav_list__link">Skills</a>
+                                <a href="#" class="nav_list__link">Skills&Expirience</a>
                             </li>
                             <li class="nav_list__item">
-                                <a href="#" class="nav_list__link">Expirience</a>
+                                <a href="#" class="nav_list__link">Projects</a>
                             </li>
                             <li class="nav_list__item">
                                 <a href="#" class="nav_list__link">Contact</a>
@@ -38,12 +46,12 @@
     </header>
 
     <main>
-        <div class="hero">
+        <section class="hero" id="hero">
             <div class="wrapper">
                 <div class="hero_container">
                     <div class="heading">
-                        <p class="heading_description">Hi! I`m</p>
-                        <h1 class="heading_text">Maksym Ivaniuk</h1>
+                        <p class="heading_description">Welcome</p>
+                        <h1 class="heading_text">I`m Maksym Ivaniuk</h1>
                         <p class="heading_description">Junior Front-End Developer</p>
                     </div>
                     <div class="cv_download">
@@ -58,24 +66,79 @@
                         <div class="socials_link">
                             <ul class="socials_link__list">
                                 <li class="socials_link__item">
-                                    <i class="fab fa-github"></i>
+                                    <a href="#" class="socials_link__link">
+                                        <i class="fab fa-github link_icon"></i>
+                                    </a>
                                 </li>
                                 <li class="socials_link__item">
-                                    <i class="fab fa-linkedin"></i>
+                                    <a href="#" class="socials_link__link">
+                                        <i class="fab fa-linkedin link_icon"></i>
+                                    </a>
                                 </li>
                                 <li class="socials_link__item">
-                                    <i class="far fa-envelope-open"></i>
+                                    <a href="#" class="socials_link__link">
+                                        <i class="far fa-envelope-open link_icon"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="about-me"></div>
-        <div class="skills"></div>
-        <div class="expirience"></div>
-        <div class="contact"></div>
+        </section>
+        <section class="info" id="info">
+            <div class="wrapper">
+                <div class="info_container">
+
+                    <div class="info_img"></div>
+
+                    <div class="info_content">
+                        <div class="info_header">
+                            <h2 class="section_header">About me</h2>
+
+                            <div class="header_underline">
+                                <span></span>
+                                <div class="header_underline__ping"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                        <p class="info_content_text">
+                            Приблизно 2 роки тому зацікавився Front-end розробкою та почав самостійно вивчати HTML та CSS. Літом 2020 року пішов на курси для вдоконалення, систематизації своїх та отримання нових знань. Ціную дружній колектив та відповідальність в колегах. Вмію швидко адаптуватися під різні умови. Постійно працюю над поповненням своїх знаннь новими технологіями та інструментами. Люблю активний спосіб життя, займаюся гірським туризмом та граю алтимат(фрісбі).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="wrapper">
+                <div class="skills_container">
+                    <div class="skills_header">
+                        <h2 class="section_header">Skills & Expirience</h2>
+                        <div class="header_underline">
+                            <span></span>
+                            <div class="header_underline__ping"></div>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skills_block">
+                            <h4 class="">Skills</h4>
+                        </div>
+                        <div class="expirience_block">
+                            <div class="expirience">
+                                <h4>Expirience</h4>
+                            </div>
+                            <div class="education">
+                                <h4>Education</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="expirience" id="expirience"></section> -->
+        <section class="projects" id="projects"></section>
+        <section class="contact" id="contact"></section>
     </main>
     <footer class="footer"></footer>
 
