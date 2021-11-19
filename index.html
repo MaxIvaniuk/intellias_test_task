@@ -30,7 +30,7 @@
                                 <a href="#info" class="nav_list__link">About me</a>
                             </li>
                             <li class="nav_list__item">
-                                <a href="#" class="nav_list__link">Skills&Expirience</a>
+                                <a href="#" class="nav_list__link">Skills</a>
                             </li>
                             <li class="nav_list__item">
                                 <a href="#" class="nav_list__link">Projects</a>
@@ -89,22 +89,27 @@
         <section class="info" id="info">
             <div class="wrapper">
                 <div class="info_container">
+                    <div class="info_header">
+                        <h2 class="section_header">About me</h2>
 
-                    <div class="info_img"></div>
+                        <div class="header_underline">
+                            <span></span>
+                            <div class="header_underline__ping"></div>
+                            <span></span>
+                        </div>
+                    </div>
 
                     <div class="info_content">
-                        <div class="info_header">
-                            <h2 class="section_header">About me</h2>
-
-                            <div class="header_underline">
-                                <span></span>
-                                <div class="header_underline__ping"></div>
-                                <span></span>
-                            </div>
+                        <div class="info_content__img">
+                            <img class="info_img" src="./img/my-img.webp" width="350px" height="500px" alt="image">
                         </div>
-                        <p class="info_content_text">
-                            Приблизно 2 роки тому зацікавився Front-end розробкою та почав самостійно вивчати HTML та CSS. Літом 2020 року пішов на курси для вдоконалення, систематизації своїх та отримання нових знань. Ціную дружній колектив та відповідальність в колегах. Вмію швидко адаптуватися під різні умови. Постійно працюю над поповненням своїх знаннь новими технологіями та інструментами. Люблю активний спосіб життя, займаюся гірським туризмом та граю алтимат(фрісбі).
-                        </p>
+
+                        <div class="info_content__descr">
+                            <h4 class="info_content__header">A little bit about myself</h4>
+                            <p class="info_content__text">
+                                Приблизно 2 роки тому зацікавився Front-end розробкою та почав самостійно вивчати HTML та CSS. Літом 2020 року пішов на курси для вдоконалення, систематизації своїх та отримання нових знань. Ціную дружній колектив та відповідальність в колегах. Вмію швидко адаптуватися під різні умови. Постійно працюю над поповненням своїх знаннь новими технологіями та інструментами. Люблю активний спосіб життя, займаюся гірським туризмом та граю алтимат(фрісбі).
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,32 +117,100 @@
         <section class="skills" id="skills">
             <div class="wrapper">
                 <div class="skills_container">
+
                     <div class="skills_header">
-                        <h2 class="section_header">Skills & Expirience</h2>
+                        <h2 class="section_header">Skills & Experience</h2>
                         <div class="header_underline">
                             <span></span>
                             <div class="header_underline__ping"></div>
                             <span></span>
                         </div>
                     </div>
-                    <div>
-                        <div class="skills_block">
-                            <h4 class="">Skills</h4>
+
+                    <div class="skills_content">
+                        <div class="hard_skills skills_wrapper">
+                            <h4 class="hard_skills__header skills_list__header">Hard Skills</h4>
+                            <ul class="hard_skills__list skills_list">
+                                <li class="skills_list__item">JavaScript</li>
+                                <li class="skills_list__item">HTML</li>
+                                <li class="skills_list__item">CSS / SCSS</li>
+                                <li class="skills_list__item">FlexBox</li>
+                                <li class="skills_list__item">Git</li>
+                                <li class="skills_list__item">Grid</li>
+                                <li class="skills_list__item">AJAX</li>
+                                <li class="skills_list__item">Responsive</li>
+                                <li class="skills_list__item">Photoshop / Figma</li> 
+                                <li class="skills_list__item">Ukrainian (native)</li>
+                                <li class="skills_list__item">Russian (native)</li>
+                                <li class="skills_list__item">English (Intermediate)</li>
+                                <li class="skills_list__item">Polish (Intermediate)</li>
+                            </ul>
                         </div>
-                        <div class="expirience_block">
-                            <div class="expirience">
-                                <h4>Expirience</h4>
+                        <div class="soft_skills skills_wrapper">
+                            <h4 class="soft_skills__header skills_list__header">Soft Skills</h4>
+                            <ul class="soft_skills__list skills_list">
+                                <li class="skills_list__item">Мультизадачість</li>
+                                <li class="skills_list__item">Комунікація</li>
+                                <li class="skills_list__item">Відповідальність</li>
+                                <li class="skills_list__item">Рішучість</li>
+                                <li class="skills_list__item">Командна робота</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="knowledge">
+                        <div class="education">
+                            <div class="education_header knowledge_header">
+                                <h4 class="education_header__text">Education</h4>
                             </div>
-                            <div class="education">
-                                <h4>Education</h4>
+                            <div class="education_content">
+                                <ul class="education_list knowledge_list">
+                                    <li class="education_list__item knowledge_item">
+                                        <h5 class="knowledge_item__header">
+                                            Ivano-Frankivsk National Medical University
+                                        </h5>
+                                        <p class="knowledge_item__descr">
+                                            2013-2018 | Dentist
+                                        </p>
+                                    </li>
+                                    <li class="education_list__item knowledge_item">
+                                        <h5 class="knowledge_item__header">
+                                            Beetroot Academy
+                                        </h5>
+                                        <p class="knowledge_item__descr">
+                                            2020-2021 | Junior Front-End Developer
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <div class="experience_header knowledge_header">
+                                <h4 class="experience_header__text">Experience</h4>
+                            </div>
+                            <div class="experience_content">
+                                <ul class="experience_list knowledge_list">
+                                    <li class="experience_list__item knowledge_item">
+                                        <h5 class="knowledge_item__header">
+                                            Sept2020 - Nov2021
+                                        </h5>
+                                        <p class="knowledge_item__descr">
+                                            IT Projects, Junior Front End Developer
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section class="expirience" id="expirience"></section> -->
-        <section class="projects" id="projects"></section>
+        <section class="projects" id="projects">
+            <div class="wrapper">
+                <div class="project_container">
+
+                </div>
+            </div>
+        </section>
         <section class="contact" id="contact"></section>
     </main>
     <footer class="footer"></footer>
