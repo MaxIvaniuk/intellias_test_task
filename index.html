@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="./style/style.css">
     <title>Maksym Ivaniuk</title>
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="wrapper">
             <div class="header_container">
                 <div class="header_logo">
@@ -27,25 +40,33 @@
                     <nav class="main_nav mobile_nav">
                         <ul class="nav_list">
                             <li class="nav_list__item">
-                                <a href="#info" class="nav_list__link">About me</a>
+                                <a href="#info" class="nav_list__link _scrollTo">About me</a>
                             </li>
                             <li class="nav_list__item">
-                                <a href="#" class="nav_list__link">Skills</a>
+                                <a href="#skills" class="nav_list__link _scrollTo">Skills</a>
                             </li>
                             <li class="nav_list__item">
-                                <a href="#" class="nav_list__link">Projects</a>
+                                <a href="#projects" class="nav_list__link _scrollTo">Projects</a>
                             </li>
                             <li class="nav_list__item">
-                                <a href="#" class="nav_list__link">Contact</a>
+                                <a href="#contact" class="nav_list__link _scrollTo">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
+        <div class="progress_container">
+            <div class="progress_bar" id="progressBar"></div>
+        </div>
     </header>
-
     <main>
+        <div class="preloader" id="preloader">
+            <div class="preloader__row">
+              <div class="preloader__item"></div>
+              <div class="preloader__item"></div>
+            </div>
+          </div>
         <section class="hero" id="hero">
             <div class="wrapper">
                 <div class="hero_container">
@@ -55,28 +76,27 @@
                         <p class="heading_description">Junior Front-End Developer</p>
                     </div>
                     <div class="cv_download">
-                        <button class="cv_download__btn">
-                            <a class="cv_download__link" href="./img/CV_Maksym Ivaniuk_Junior_Front-end.pdf" download>Download CV</a>
-                        </button>
+                        <div class="cv_download__btn">
+                            <a class="cv_download__link" href="./img/CV_Ivaniuk_Maksym_Junior_Frontend_Developer.pdf" download>Download CV</a>
+                        </div>
                     </div>
-
                     <div class="socials">
                         <div class="socials_description">Socials</div>
                         <span class="socials_line"></span>
                         <div class="socials_link">
-                            <ul class="socials_link__list">
+                            <ul class="socials_link__list ">
                                 <li class="socials_link__item">
-                                    <a href="https://github.com/MaxIvaniuk" class="socials_link__link" target="_blank">
+                                    <a href="https://github.com/MaxIvaniuk" class="socials_link__link" target="blanc">
                                         <i class="fab fa-github link_icon"></i>
                                     </a>
                                 </li>
                                 <li class="socials_link__item">
-                                    <a href="https://www.linkedin.com/in/maksym-ivaniuk-a136b1207/" class="socials_link__link" target="_blank">
+                                    <a href="https://www.linkedin.com/in/maksym-ivaniuk-a136b1207/" class="socials_link__link" target="blanc">
                                         <i class="fab fa-linkedin link_icon"></i>
                                     </a>
                                 </li>
                                 <li class="socials_link__item">
-                                    <a href="mailto:m.ivaniuk97@gmail.com" class="socials_link__link" target="_blank">
+                                    <a href="mailto:m.ivaniuk97@gmail.com" class="socials_link__link" target="blanc">
                                         <i class="far fa-envelope-open link_icon"></i>
                                     </a>
                                 </li>
@@ -98,16 +118,18 @@
                             <span></span>
                         </div>
                     </div>
-
                     <div class="info_content">
                         <div class="info_content__img">
                             <img class="info_img" src="./img/my-img.webp" width="350px" height="500px" alt="image">
                         </div>
-
                         <div class="info_content__descr">
                             <h4 class="info_content__header">A little bit about myself</h4>
                             <p class="info_content__text">
-                                Приблизно 2 роки тому зацікавився Front-end розробкою та почав самостійно вивчати HTML та CSS. Літом 2020 року пішов на курси для вдоконалення, систематизації своїх та отримання нових знань. Ціную дружній колектив та відповідальність в колегах. Вмію швидко адаптуватися під різні умови. Постійно працюю над поповненням своїх знаннь новими технологіями та інструментами. Люблю активний спосіб життя, займаюся гірським туризмом та граю алтимат(фрісбі).
+                                About 1 years ago I was interested in Front-End development and I started to study it using FreeCodeCamp, MDN, HTML Academy simulators, webinars and YouTube videos. In September 2020, I decided to take courses at the Beetroot Academy in order to systematize the acquired and gain new knowledge, experience, 
+                                mentoring and code review. At the moment, I am studying working with Git and going through the basics of JavaScript again in Udemy courses, 
+                                improving HTML/CSS code and JS skills on Codewars and my pet projects. Also improove my knowlege of english. Soon I plan to start learning JS framework React, Gulp / Webpack task manager. 
+                                I appreciate the friendly team and responsibility. I can quickly adapt, search information and learn quickly. I get unreal pleasure from WEB developing. Especially when everything works as it 
+                                should and benefits the user.
                             </p>
                         </div>
                     </div>
@@ -117,7 +139,6 @@
         <section class="skills" id="skills">
             <div class="wrapper">
                 <div class="skills_container">
-
                     <div class="skills_header">
                         <h2 class="section_header">Skills & Experience</h2>
                         <div class="header_underline">
@@ -126,7 +147,6 @@
                             <span></span>
                         </div>
                     </div>
-
                     <div class="skills_content">
                         <div class="hard_skills skills_wrapper">
                             <h4 class="hard_skills__header skills_list__header">Hard Skills</h4>
@@ -149,11 +169,14 @@
                         <div class="soft_skills skills_wrapper">
                             <h4 class="soft_skills__header skills_list__header">Soft Skills</h4>
                             <ul class="soft_skills__list skills_list">
-                                <li class="skills_list__item">Мультизадачість</li>
-                                <li class="skills_list__item">Комунікація</li>
-                                <li class="skills_list__item">Відповідальність</li>
-                                <li class="skills_list__item">Рішучість</li>
-                                <li class="skills_list__item">Командна робота</li>
+                                <li class="skills_list__item">Adaptability</li>
+                                <li class="skills_list__item">Communication</li>
+                                <li class="skills_list__item">Discipline</li>
+                                <li class="skills_list__item">Creativity</li>
+                                <li class="skills_list__item">Teamwork</li>
+                                <li class="skills_list__item">Conflict management</li>
+                                <li class="skills_list__item">Calmness</li>
+                                <li class="skills_list__item">Responsibility</li>
                             </ul>
                         </div>
                     </div>
@@ -215,103 +238,175 @@
                             <span></span>
                         </div>
                     </div>
-
                     <div class="projects_content">
-
                         <div class="project_item monticello">
                             <div class="project_descr">
                                 <div class="project_header">
                                     <h4>Monticello</h4>
                                 </div>
                                 <div class="project_links">
-                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/JSmodule_exam/" target="_blank">
+                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/JSmodule_exam/" target="blanc">
                                         <i class="fas fa-link"></i>
+                                        <span class="link_hints">Visit project</span>
                                     </a>
-                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/JSmodule_exam" target="_blank">
+                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/JSmodule_exam" target="blanc">
                                         <i class="fab fa-github"></i>
+                                        <span class="link_hints">View repo</span>
                                     </a>
                                 </div>
                                 <p class="project_descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, esse?</p>
                             </div>
                         </div>
-                        
                         <div class="project_item travelMore">
                             <div class="project_descr">
                                 <div class="project_header">
                                     <h4>Travel More</h4>
                                 </div>
                                 <div class="project_links">
-                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/Pet_pr_TravelMore/" target="_blank">
+                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/Pet_pr_TravelMore/" target="blanc">
                                         <i class="fas fa-link"></i>
+                                        <span class="link_hints">Visit project</span>
                                     </a>
-                                    <a class="project_links__item" href="https://github.com/MaxIvaniuk/Pet_pr_TravelMore" target="_blank">
+                                    <a class="project_links__item" href="https://github.com/MaxIvaniuk/Pet_pr_TravelMore" target="blanc">
                                         <i class="fab fa-github repo_link"></i>
+                                        <span class="link_hints">View repo</span>
                                     </a>
                                 </div>
                                 <p class="project_descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, esse?</p>
                             </div>
                         </div>
-
                         <div class="project_item photographer">
                             <div class="project_descr">
                                 <div class="project_header">
                                     <h4>Photographer Portfolio</h4>
                                 </div>
                                 <div class="project_links">
-                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/D_Eliashevskiy/" target="_blank">
+                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/D_Eliashevskiy/" target="blanc">
                                         <i class="fas fa-link"></i>
+                                        <span class="link_hints">Visit project</span>
                                     </a>
-                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/D_Eliashevskiy" target="_blank">
+                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/D_Eliashevskiy" target="blanc">
                                         <i class="fab fa-github"></i>
+                                        <span class="link_hints">View repo</span>
                                     </a>
                                 </div>
                                 <p class="project_descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, esse?</p>
                             </div>
                         </div>
-
                         <div class="project_item calorieMeter">
-                            
                             <div class="project_descr">
                                 <div class="project_header">
                                     <h4>Calorie Meter</h4>
                                 </div>
                                 <div class="project_links">
-                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/calorieMeter/" target="_blank">
+                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/calorieMeter/" target="blanc">
                                         <i class="fas fa-link"></i>
+                                        <span class="link_hints">Visit project</span>
                                     </a>
-                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/calorieMeter" target="_blank">
+                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/calorieMeter" target="blanc">
                                         <i class="fab fa-github"></i>
+                                        <span class="link_hints">View repo</span>
                                     </a>
                                 </div>
                                 <p class="project_descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, esse?</p>
                             </div>
                         </div>
-
                         <div class="project_item mountainHistory">
-                            
                             <div class="project_descr">
                                 <div class="project_header">
                                     <h4>Mountain History</h4>
                                 </div>
                                 <div class="project_links">
-                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/mountain_history/" target="_blank">
+                                    <a class="project_links__item page_link" href="https://maxivaniuk.github.io/mountain_history/" target="blanc">
                                         <i class="fas fa-link"></i>
+                                        <span class="link_hints">Visit project</span>
                                     </a>
-                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/mountain_history" target="_blank">
+                                    <a class="project_links__item repo_link" href="https://github.com/MaxIvaniuk/mountain_history" target="blanc">
                                         <i class="fab fa-github"></i>
+                                        <span class="link_hints">View repo</span>
                                     </a>
                                 </div>
                                 <p class="project_descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, esse?</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact"></section>
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <div class="contact_container">
+                    <div class="contact_header">
+                        <h2 class="section_header">Contact me</h2>
+                        <div class="header_underline">
+                            <span></span>
+                            <div class="header_underline__ping"></div>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <div class="contact_content__descr">
+                            <h3 class="contact_content__header">Would you like more information or do you have a questions?</h3>
+                        </div>
+                        <div class="contact_form">
+                            <form class="form" id="contact-form" method="POST" action="#">
+                                <div class="form_name input_container">
+                                    <input type="text" class="form_name__input input_field" name="userName" id="formName" placeholder="Your name" required />
+                                    <label for="formName" class="form_name_label input_label">Your Name</label> 
+                                </div>                       
+                                
+                                <div class="form_email input_container">
+                                    <input class="form_email__input input_field" type="email" name="userEmail" id="formEmail" placeholder="Your e-mail" required />
+                                    <label for="formEmail" class="form_email__label input_label">Your e-mail</label>
+                                </div>
+                                <button class="form_button " id="form-button" type="submit">Send Now</button>
+                                <div class="form_messages" id="messages">
+                                    <p class="form_messages__success">
+                                        Thank you for the contact I will answer you soon
+                                    </p>
+                                    <p class="form_messages__error">
+                                        Error sending message
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer_container">
+                <div class="footer_socials">
+                    <ul class="footer_socials__list">
+                        <li class="footer_socials__list_item">
+                            <a class="footer_socials__list_link" href="https://www.linkedin.com/in/maksym-ivaniuk-a136b1207/" target="blanc">Linkedin.</a>
+                        </li>
+                        <li class="footer_socials__list_item">
+                            <a class="footer_socials__list_link" href="https://github.com/MaxIvaniuk" target="blanc">Github.</a>
+                        </li>
+                        <li class="footer_socials__list_item">
+                            <a class="footer_socials__list_link" href="https://www.instagram.com/ivanuk.m/" target="blanc">Instagram.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_scroll">
+                    <a href="#hero " class="footer_scroll__btn _scrollTo">
+                        <i class="footer_scroll__icon fas fa-angle-up"></i>
+                    </a>
+                </div>
+                <div class="footer_copy">
+                    <p class="footer_copy__text">
+                        <time datetime="2021-11-20">2021</time>
+                        &copy;
+                        Made by <span class="footer_copy__span">Maksym Ivaniuk</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
     <script src="./script/script.js"></script>
