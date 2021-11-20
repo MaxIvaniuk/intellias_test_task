@@ -18,11 +18,3 @@ window.addEventListener('scroll', () => {
         header.classList.remove('sticky')
     }
 })
-
-// Accordeon
-// let accordeon = document.querySelector('.hard_skills'),
-//     opener = document.querySelector('.hard_skills__list');
-
-// accordeon.addEventListener('click', () => {
-//     opener.classList.add('active');
-// })
