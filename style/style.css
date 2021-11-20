@@ -1076,6 +1076,7 @@ body {
     .footer_socials {
         margin-bottom: 30px;
         width: 70%;
+        margin: 0 auto;
     }
 
     .footer_socials__list {
