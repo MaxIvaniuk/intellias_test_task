@@ -20,4 +20,10 @@
         transform: scale(2);
         opacity: 0;
     }
-  }
+}
+
+@keyframes hint {
+    from {
+        right: -100%
+    }
+}
