@@ -1,6 +1,6 @@
 'use strict';
 
-// Mobile navigation
+// Mobile navigation toggle
 const mobileNav = document.querySelector('.mobile_nav'),
     toggler = document.querySelector('.mobile_toggle__input');
 

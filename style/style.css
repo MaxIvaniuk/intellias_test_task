@@ -1001,6 +1001,8 @@ body {
     font-weight: 500;
 }
 
+/* MediaQuerries */
+
 @media (max-width: 480px) {
     .info_content {
         flex-direction: column;
@@ -1073,7 +1075,18 @@ body {
 
     .footer_socials {
         margin-bottom: 30px;
+        width: 70%;
     }
+
+    .footer_socials__list {
+        justify-content: space-between;
+        
+    }
+
+    .footer_socials__list_item {
+        margin: 0;
+    }
+
     .footer_scroll {
         display: none;
     }
